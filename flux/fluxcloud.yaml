@@ -38,10 +38,9 @@ spec:
         ports:
         - containerPort: 3032
         env:
-        - name: SLACK_URL
+        - name: MSTEAMS_URL
           value: "https://outlook.office.com/webhook/9a4f3a9c-45f1-4b5b-af05-579ebd0f239a@7d2ba175-3f46-48a8-aaba-30563a31b927/IncomingWebhook/3c0ff829ddb249508670eeb0513cb5e9/7b212add-90ac-4a1d-ba63-abcdb4f43173"
-        - name: SLACK_CHANNEL
-          value: "#flux-notifications"
+       
         # Or configure multiple channels
         # (comma separated <channel>=<namespace>) string:
         #  value: "#kubernetes=*,#team=team"
@@ -51,11 +50,8 @@ spec:
         #     secretKeyRef:
         #       key: token
         #       name: slack-token
-        - name: SLACK_USERNAME
-          value: Flux Deployer
-        - name: SLACK_ICON_EMOJI
-          value: ":heart:"
         - name: GITHUB_URL
           value: "https://github.com/althalus86/kubernetes-workshop/"
         - name: LISTEN_ADDRESS
           value: ":3032"
+

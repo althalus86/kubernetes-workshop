@@ -54,4 +54,6 @@ spec:
           value: "https://github.com/althalus86/kubernetes-workshop/"
         - name: LISTEN_ADDRESS
           value: ":3032"
+        - name: EXPORTER_TYPE
+          value: "msteams"
 
